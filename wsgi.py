@@ -1,4 +1,4 @@
-from eventimage import app
+from eventimage import application
 
 if __name__ == "__main__":
-        app.run()
+        application.run()

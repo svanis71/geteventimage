@@ -4,8 +4,8 @@ from flask import Flask, request, make_response
 from flask_restful import Resource, Api
 from template import svg_tmpl
 
-app = Flask(__name__)
-api = Api(app)
+application = Flask(__name__)
+api = Api(application)
 
 class EventImage(Resource):
     def get(self):
@@ -19,4 +19,4 @@ class EventImage(Resource):
 api.add_resource(EventImage, '/getimage')
 
 if __name__ == '__main__':
-    app.run()
+    application.run()
